@@ -1,25 +1,14 @@
 {
-  "name": "webauth-iii-challenge",
+  "name": "auth-iii-guided",
   "version": "1.0.0",
-  "description": "## Topics",
+  "description": "Auth III Module Guided Project",
   "main": "index.js",
   "scripts": {
     "server": "nodemon",
-    "start":"index.js"
+    "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bwpeck/webauth-iii-challenge.git"
-  },
-  "author": "Benjamin Peck",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bwpeck/webauth-iii-challenge/issues"
-  },
-  "homepage": "https://github.com/bwpeck/webauth-iii-challenge#readme",
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  },
+  "keywords": [],
+  "author": "Lambda School",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -28,5 +17,8 @@
     "jsonwebtoken": "^8.5.1",
     "knex": "^0.19.2",
     "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }

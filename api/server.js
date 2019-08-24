@@ -28,7 +28,7 @@ server.get('/token', (req, res) => {
     subject: 'me', // translates unto the "sub" property on the token
     role,
   };
-  const secret = 'Keep it simple, stupid';
+  const secret = 'is it secret, is it safe?';
   const options = {
     expiresIn: '8h',
   };

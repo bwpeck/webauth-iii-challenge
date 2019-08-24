@@ -4,11 +4,9 @@ const Users = require('./users-model.js');
 const restricted = require('../auth/restricted-middleware.js');
 
 router.get('/', restricted, (req, res) => {
-  const department = req.jwtToken.department;
-
-  Users.find(department)
+  Users.find()
     .then(users => {
-      res.json(users);
+      res.json({ loggedInUser: req.user.username, users });
     })
     .catch(err => res.send(err));
 });
